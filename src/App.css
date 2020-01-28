@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.block1 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.block2 {
+  height: 200px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transform: translate(-15px, -88px) rotate(35deg);
+}
+.block3 {
+  height: 200px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 20px;
+}
