@@ -13,13 +13,37 @@ class App extends Component {
 
     }
   }
+
   render() {
+
+    // function getCoors(event) {
+    //   var x = event.clientX
+    //   var y = event.clientY
+    //   let circle = document.querySelector('.circle')
+    //   circle.style.left = x + 'px'
+    //   circle.style.top = y + 'px'
+    // }
+    function handleBlur(event) {
+      let blocks = document.querySelectorAll('.block')
+      blocks.forEach(i => {
+        i.style.filter = 'blur(4px)'
+      })
+      event.target.style.filter = 'blur(0)'
+    }  
+    function unblur(event) {
+      let blocks = document.querySelectorAll('.block')
+      blocks.forEach(i => {
+        i.style.filter = 'blur(0)'
+      })
+      event.target.style.filter = 'blur(0)'
+    }
+
     return(
       <div className='app-container'>
         <nav className='nav'>
-          <div className='block1'></div>
-          <div className='block2'></div>
-          <div className='block3'></div>
+          <div className='block1 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>About</div>
+          <div className='block2 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Projects</div>
+          <div className='block3 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Contact</div>
         </nav>
 
       </div>
@@ -28,3 +52,20 @@ class App extends Component {
 }
 
 export default App
+
+
+
+
+        // <div className='grid-container'>
+        //   <div className='grid-item'></div>
+        //   <div className='grid-item'></div>
+        //   <div className='grid-item'></div>
+        //   <div className='grid-item'></div>
+        //   <div className='grid-item'></div>
+        //   <div className='grid-item'></div>
+        //   <div className='grid-item'></div>
+        //   <div className='grid-item'></div>
+        //   <div className='grid-item'></div>
+        // </div>
+
+
