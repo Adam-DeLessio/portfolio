@@ -26,16 +26,16 @@ class App extends Component {
     function handleBlur(event) {
       let blocks = document.querySelectorAll('.block')
       blocks.forEach(i => {
-        i.style.filter = 'blur(4px)'
+        i.style.animation = 'blur 1s forwards'
       })
-      event.target.style.filter = 'blur(0)'
+      event.target.style.animation = null
     }  
     function unblur(event) {
       let blocks = document.querySelectorAll('.block')
       blocks.forEach(i => {
-        i.style.filter = 'blur(0)'
+        i.style.animation = 'unblur 1s forwards'
       })
-      event.target.style.filter = 'blur(0)'
+      event.target.style.animation = null
     }
 
     return(

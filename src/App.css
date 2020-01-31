@@ -74,7 +74,7 @@
   align-items: center;
   font-size: 45px;
   border-radius: 10px;
-  filter: blur(3px);
+  /*filter: blur(3px);*/
 }
 .block1 {
   height: 200px;
@@ -99,3 +99,16 @@
   background-color: rgba(0, 210, 0, .1);
   margin-left: 20px;
 }
+
+@keyframes blur {
+  from {filter: blur(0);}
+  to {filter: blur(4px);}
+}
+@keyframes unblur {
+  from {filter: blur(4px);}
+  to {filter: blur(0);}
+}
+
+
+
+
