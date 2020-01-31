@@ -26,14 +26,15 @@ class App extends Component {
     function handleBlur(event) {
       let blocks = document.querySelectorAll('.block')
       blocks.forEach(i => {
-        i.style.animation = 'blur 1s forwards'
+        i.style.animation = 'blur 300ms forwards'
       })
       event.target.style.animation = null
+      event.target.style.cursor = 'grab'
     }  
     function unblur(event) {
       let blocks = document.querySelectorAll('.block')
       blocks.forEach(i => {
-        i.style.animation = 'unblur 1s forwards'
+        i.style.animation = 'unblur 300ms forwards'
       })
       event.target.style.animation = null
     }
@@ -45,6 +46,7 @@ class App extends Component {
           <div className='block2 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Projects</div>
           <div className='block3 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Contact</div>
         </nav>
+        <div className='circle'></div>
 
       </div>
     )
