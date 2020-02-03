@@ -1,0 +1,77 @@
+.home {
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  position: absolute;
+}
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
+.block1 {
+  height: 200px;
+  width: 200px;
+  border: 10px solid;
+  border-color: rgba(210, 0, 0, .8);
+  background-color: rgba(210, 0, 0, .1);
+  box-shadow: 6px 6px rgba(0, 0, 0, .1);
+}
+.block2 {
+  height: 200px;
+  width: 400px;
+  border: 10px solid;
+  border-color: rgba(0, 0, 210, .8);
+  background-color: rgba(0, 0, 210, .1);
+  transform: translate(-11px, -100px) rotate(35deg);
+  box-shadow: 6px 0 rgba(0, 0, 0, .1);
+}
+.block3 {
+  height: 200px;
+  width: 300px;
+  border: 10px solid;
+  border-color: rgba(0, 120, 0, .8);
+  background-color: rgba(0, 210, 0, .1);
+  margin-left: 30px;
+  box-shadow: 6px 6px rgba(0, 0, 0, .1);
+}
+.circle {
+  background-color: lightgray;
+  width: 70%;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+@keyframes blur {
+  from {filter: blur(0);}
+  to {filter: blur(4px);}
+}
+@keyframes unblur {
+  from {filter: blur(4px);}
+  to {filter: blur(0);}
+}
+
+
