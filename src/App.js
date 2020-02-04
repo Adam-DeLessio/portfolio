@@ -12,9 +12,24 @@ class App extends Component {
       <div className='app-container'>
         <Link to='/' className='home'>Home</Link>
 
+        <Route
+          path='/'
+          exact
+          render={props => (
+            <Home
+              {...props}
+            />
+          )}
+        />
 
-        <Route path='/' component={Home} exact />
-        <Route path='About/' component={About} />
+        <Route
+          path='/About'
+          render={props => (
+            <About
+              {...props}
+            />
+          )}
+        />
 
       </div>
     )

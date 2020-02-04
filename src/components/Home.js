@@ -22,10 +22,11 @@ class Home extends Component {
 		return(
 			<div className='home-container'>
 		        <nav className='nav'>
-		          <Link to='About/' className='block1 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>About</Link>
+		          <Link to='/About/' className='block1 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>About</Link>
 		          <div className='block2 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Projects</div>
 		          <div className='block3 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Contact</div>
 		        </nav>
+
 			</div>
 		)
 	}
