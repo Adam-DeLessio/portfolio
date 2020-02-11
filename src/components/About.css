@@ -1,7 +1,7 @@
 .about-container {
 	height: 100vh;
 	width: 100vw;
-	background-color: black;
+	background-image: linear-gradient(to bottom left, black, rgb(80, 80, 80));
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -10,13 +10,14 @@
 	display: grid;
 	grid-template-columns: 200px 200px 200px;
 	grid-template-rows: 200px;
+	font-family: 'Bad Script';
 }
 .grid-item {
-	border: 2px solid white;
+	border: 2px solid lightgray;
 }
 .grid1 {
 	border: 0;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid lightgray;
 }
 .grid2 {
 	border-right: 0;
@@ -24,15 +25,7 @@
 }
 .grid3 {
 	border: 0;
-	border-top: 2px solid white;
-}
-.nav-item {
-	height: 33%;
-	width: 200px;
-	display: flex;
-}
-.nav1 {
-	margin-left: 200px;
+	border-top: 2px solid lightgray;
 }
 .bullet-container {
 	width: 30%;
@@ -40,6 +33,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.nav-item {
+	transition-property: transform, opacity;
+	transition: all 400ms ease;
+	opacity: .7;
+}
+.nav-item:hover {
+	transform: scale(1.2);
+	opacity: 1;
 }
 .bullet {
 	width: 50%;
@@ -58,9 +60,38 @@
 	border-radius: 100%;
 	border: 5px solid white;
 }
+@keyframes expand {
+	to {
+		transform: scale(1.2);
+		opacity: 1;
+	}
+}
+@keyframes condense {
+	from {
+		transform: scale(1.5);
+		opacity: 1;
+	}
+	to {
+		transform: scale3d(1);
+		opacity: .5;
+	}
+}
 .name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 70%;
 	height: 100%;
+	color: white;
+	font-size: 34px;
+}
+.nav-item {
+	height: 33%;
+	width: 200px;
+	display: flex;
+}
+.nav1 {
+	margin-left: 200px;
 }
 .nav2 {
 	margin-left: 125px;
