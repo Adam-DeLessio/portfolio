@@ -1,69 +1,56 @@
 
-.home {
-  width: 50px;
-  height: 50px;
-  background-color: lightgray;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 10px;
-  position: absolute;
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.app-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header {
+	height: 65vh;
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	z-index: 0;
+	transform: rotate(10deg);
+}
+.grid {
+	display: grid;
+	grid-template-columns: 5px 100px;
+	grid-template-rows: 190px 190px 190px 120px;
+	transform: rotate(-50deg);
+	position: absolute;
+	z-index: 1;
 }
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
+	font-size: 34px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(50deg);
+	transform-origin: left;
+	padding: 0 0 30px 30px;
+	font-family: 'Tommorrow';
 }
-.block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 45px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
+.a {
+	color: white;
 }
-.block1 {
-  height: 200px;
-  width: 200px;
-  border: 10px solid;
-  border-color: rgba(210, 0, 0, .8);
-  background-color: rgba(210, 0, 0, .1);
-  box-shadow: 6px 6px rgba(0, 0, 0, .1);
+.c {
+	color: white;
 }
-.block2 {
-  height: 200px;
-  width: 400px;
-  border: 10px solid;
-  border-color: rgba(0, 0, 210, .8);
-  background-color: rgba(0, 0, 210, .1);
-  transform: translate(-11px, -100px) rotate(35deg);
-  box-shadow: 6px 0 rgba(0, 0, 0, .1);
+.white-line {
+	grid-area: 1 / 1 / 3 / 2;
+	background-color: white;
 }
-.block3 {
-  height: 200px;
-  width: 300px;
-  border: 10px solid;
-  border-color: rgba(0, 120, 0, .8);
-  background-color: rgba(0, 210, 0, .1);
-  margin-left: 30px;
-  box-shadow: 6px 6px rgba(0, 0, 0, .1);
+.black-line {
+	grid-area: 3 / 1 / last-line / 2;
+	background-color: black;
 }
-.circle {
-  background-color: lightgray;
-  width: 70%;
-  height: 30px;
-  border-radius: 50%;
-  margin-top: 20px;
+.footer {
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 41.5vh;
+	z-index: 0;
 }
 
 @keyframes blur {
@@ -74,5 +61,3 @@
   from {filter: blur(4px);}
   to {filter: blur(0);}
 }
-
-
