@@ -4,17 +4,30 @@ import './About.css'
 
 class About extends Component {
 	render() {
-		function handleEnter(event) {
-			// event.target.style.animation = 'expand 400ms forwards'
+
+		function mouseEnter(event) {
+			let message = document.querySelector('.intro-paragraph').innerHTML
+			let newMessage = message.split('')
+			newMessage.map(l => {
+				
+			})
 		}
-		function handleLeave(event) {
-		// 	event.target.style.animation = 'condense 400ms forwards'
+		function letterEnter(l) {
+
 		}
+
 		return(
 			<div className='about-container'>
+				<header className='intro-container'>
+					<section className='intro-section'>
+						<img className='profile-pic' src='https://i.imgur.com/UHABbRy.jpg'/>
+						<p className='intro-paragraph' onMouseEnter={mouseEnter}>Hello, I'm Adam DeLessio.</p>
+					</section>
+				</header>
+
 				<main className='grid-container'>
 					<section className='grid-item grid1'>
-						<div className='nav-item nav1' onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+						<div className='nav-item nav1'>
 							<div className='bullet-container'>
 								<div className='bullet'>
 									<div className='inner-bullet'></div>
@@ -24,7 +37,7 @@ class About extends Component {
 						</div>
 						<div className='nav-item nav2'>
 							<div className='bullet-container'>
-								<div className='bullet' onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+								<div className='bullet'>
 									<div className='inner-bullet'></div>
 								</div>
 							</div>
@@ -32,7 +45,7 @@ class About extends Component {
 						</div>
 						<div className='nav-item nav3'>
 							<div className='bullet-container'>
-								<div className='bullet' onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
+								<div className='bullet'>
 									<div className='inner-bullet'></div>
 								</div>
 							</div>

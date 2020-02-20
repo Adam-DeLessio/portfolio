@@ -23,8 +23,8 @@ class Home extends Component {
 			<div className='home-container'>
 		        <nav className='nav'>
 		          <Link to='/About/' className='block1 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>About</Link>
-		          <div className='block2 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Projects</div>
-		          <div className='block3 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Contact</div>
+		          <Link to='/Projects/' className='block2 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Projects</Link>
+		          <Link to='/Contact/' className='block3 block' onMouseEnter={handleBlur} onMouseLeave={unblur}>Contact</Link>
 		        </nav>
 
 			</div>

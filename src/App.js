@@ -21,11 +21,26 @@ class App extends Component {
             />
           )}
         />
-
         <Route
           path='/About'
           render={props => (
             <About
+              {...props}
+            />
+          )}
+        />
+        <Route
+          path='/Projects'
+          render={props => (
+            <Projects
+              {...props}
+            />
+          )}
+        />
+        <Route
+          path='/Contact'
+          render={props => (
+            <Contact
               {...props}
             />
           )}
