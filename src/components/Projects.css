@@ -1,0 +1,10 @@
+.projects-container {
+	width: 100vw;
+	font-family: 'Tommorrow';
+}
+.projects-header {
+	display: flex;
+	justify-content: flex-start;
+	height: 10vh;
+	width: 100%;
+}

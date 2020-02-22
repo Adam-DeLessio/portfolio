@@ -8,7 +8,7 @@ class Home extends Component {
 	      let navs = document.querySelectorAll('.nav')
 	      navs.forEach(i => {
 	        i.style.animation = 'blur 300ms forwards'
-	        i.style.cursor = 'grab'
+	        i.style.cursor = 'pointer'
 	      })
 	      event.target.style.animation = null
 	    }  
@@ -24,8 +24,8 @@ class Home extends Component {
 			<div className='home-container'>
 				<header className='header'></header>
 				<div className='name-grid'>
-					<h1 className='first name'>adam</h1>
-					<h1 className='last name'>delessio</h1>
+					<h1 className='first name'>Adam</h1>
+					<h1 className='last name'>DeLessio</h1>
 				</div>
 				<div className='grid'>
 					<Link to='/about/' className='nav a' onMouseEnter={handleBlur} onMouseLeave={unblur}>about</Link>

@@ -9,6 +9,7 @@ class Contact extends Component {
 			<div className='contact-container'>
 				<header className='contact-header'>
 					<Link to='/' className='home-icon'> <Home /> </Link>
+					<div className='header-name'>Adam DeLessio</div>
 				</header>
 				<div className='contact-grid'>
 					<div className='grid-item'>
