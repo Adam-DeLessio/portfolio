@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import './Contact.css'
+import { Link } from 'react-router-dom'
+import Home from './HomeIcon'
 
 class Contact extends Component {
 	render() {
 		return(
 			<div className='contact-container'>
+				<header className='contact-header'>
+					<Link to='/' className='home-icon'> <Home /> </Link>
+				</header>
 				<div className='contact-grid'>
 					<div className='grid-item'>
 						<div className='method'>cell</div>
@@ -16,11 +21,11 @@ class Contact extends Component {
 						<hr/>
 						<div className='content'>adamdelessio@gmail.com</div>
 					</div>
-					<div className='grid-item'>
+					<a href='https://www.linkedin.com/in/adam-delessio/' className='grid-item'>
 						<div className='method'>linkedIn</div>
 						<hr/>
 						<div className='content'>adam-delessio</div>
-					</div>
+					</a>
 				</div>
 			</div>
 		)

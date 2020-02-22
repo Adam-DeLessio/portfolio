@@ -1,12 +1,22 @@
 .contact-container {
-	height: 100vh;
+	/*height: 100vh;*/
 	width: 100vw;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	justify-content: center;
 	font-family: "Tommorrow";
 }
-
+.contact-header {
+	display: flex;
+	justify-content: flex-start;
+	height: 10vh;
+	width: 100%;
+	margin-bottom: 10%;
+}
+.home-icon {
+	margin: 20px;
+}
 .contact-grid {
 	display: grid;
 	grid-template-rows: 250px;
@@ -23,6 +33,7 @@
 	border-radius: 100%;
 	color: white;
 	font-size: 20px;
+	text-decoration: none;
 }
 .method {
 	letter-spacing: 2px;

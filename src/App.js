@@ -8,7 +8,6 @@ import Projects from './components/Projects'
 
 class App extends Component {
   render() {
-    // <Link to='/' className='home'>Home</Link>
     return(
       <div className='app-container'>
 
