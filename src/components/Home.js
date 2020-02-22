@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './Home.css'
 
 class Home extends Component {
@@ -22,10 +23,14 @@ class Home extends Component {
 		return(
 			<div className='home-container'>
 				<header className='header'></header>
+				<div className='name-grid'>
+					<h1 className='first name'>adam</h1>
+					<h1 className='last name'>delessio</h1>
+				</div>
 				<div className='grid'>
-					<div className='nav a' onMouseEnter={handleBlur} onMouseLeave={unblur}>about</div>
-					<div className='nav c' onMouseEnter={handleBlur} onMouseLeave={unblur}>contact</div>
-					<div className='nav p' onMouseEnter={handleBlur} onMouseLeave={unblur}>projects</div>
+					<Link to='/about/' className='nav a' onMouseEnter={handleBlur} onMouseLeave={unblur}>about</Link>
+					<Link to='/contact/' className='nav c' onMouseEnter={handleBlur} onMouseLeave={unblur}>contact</Link>
+					<Link to='/projects/' className='nav p' onMouseEnter={handleBlur} onMouseLeave={unblur}>projects</Link>
 
 					<div className='white-line'></div>
 					<div className='black-line'></div>
