@@ -10,6 +10,12 @@ class Home extends Component {
 	        i.style.animation = 'blur 300ms forwards'
 	        i.style.cursor = 'pointer'
 	      })
+	      let name = document.querySelectorAll('.name')
+	      name.forEach(i => {
+	      	i.style.animation = 'blur 300ms forwards'
+	      })
+	      let dev = document.querySelector('.dev')
+	      dev.style.animation = 'blur 300ms forwards'
 	      event.target.style.animation = null
 	    }  
 	    function unblur(event) {
@@ -17,6 +23,12 @@ class Home extends Component {
 	      navs.forEach(i => {
 	        i.style.animation = 'unblur 300ms forwards'
 	      })
+	      let name = document.querySelectorAll('.name')
+	      name.forEach(i => {
+	      	i.style.animation = 'unblur 300ms forwards'
+	      })
+	      let dev = document.querySelector('.dev')
+	      dev.style.animation = 'unblur 300ms forwards'
 	      event.target.style.animation = null
 	    }
 
@@ -30,11 +42,12 @@ class Home extends Component {
 				<div className='grid'>
 					<Link to='/about/' className='nav a' onMouseEnter={handleBlur} onMouseLeave={unblur}>about</Link>
 					<Link to='/contact/' className='nav c' onMouseEnter={handleBlur} onMouseLeave={unblur}>contact</Link>
-					<Link to='/projects/' className='nav p' onMouseEnter={handleBlur} onMouseLeave={unblur}>projects</Link>
+					<Link to='/projects/' className='nav pr' onMouseEnter={handleBlur} onMouseLeave={unblur}>projects</Link>
 
 					<div className='white-line'></div>
 					<div className='black-line'></div>
 				</div>
+				<div className='dev'>Software Develo<span className='p'>p</span>er</div>
 				<footer className='footer'></footer>
 			</div>
 		)

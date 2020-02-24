@@ -61,7 +61,7 @@
 .c {
 	color: white;
 }
-.p {
+.pr {
 	color: black;
 }
 .white-line {
@@ -93,8 +93,17 @@
   from {filter: blur(4px);}
   to {filter: blur(0);}
 }
-
-
+.dev {
+	position: absolute;
+	right: 8%;
+	bottom: 40.1%;
+	font-size: 38px;
+	color: white;
+	z-index: 1;
+}
+.p {
+	color: red;
+}
 
 
 

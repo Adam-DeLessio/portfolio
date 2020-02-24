@@ -51,23 +51,23 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-}
-.skills {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
 	align-items: flex-start;
-	margin-left: 5%;
+}
+.about-me {
+	margin: 0 5%;
+}
+.about {
+	text-align: justify;
 }
 .skills-list {
-	width: 100%;
 	list-style-type: none;
 	display: flex;
-	/*line-height: 30px;*/
+	justify-content: space-between;
 	padding: 0;
-	margin: 0;
+	margin: 0 5%;
+	width: 90%;
 }
-li {
-	margin-right: 8%;
+.line {
+	width: 90%;
+	margin: 5%;
 }
