@@ -14,6 +14,10 @@ class About extends Component {
 					<div className='avatar'></div>
 					<h1 className='full-name'>Adam DeLessio</h1>
 					<h2 className='tag'>Software Developer</h2>
+					<div className='extras'>
+						<a href='https://github.com/Adam-DeLessio/Resume/blob/master/Resume.pdf' className='extra resume' target='_blank'>Resume</a>
+						<a href='https://github.com/Adam-DeLessio' className='extra git' target='_blank'>GitHub</a>
+					</div>
 				</aside>
 				<main className='about-main'>
 					<section className='about-me'>
@@ -22,7 +26,7 @@ class About extends Component {
 						Engineering Immersive at General Assembly.
 						</p>
 						<p className='about'>
-						Until recently, I spent most of my adult life as a collegiate or professional musician in the Marine Corps. After four years in the service
+						Until recently, I spent most of my adult life as a collegiate musician or professional musician in the Marine Corps. After four years in the service
 						I decided that I no longer wanted to pursue music or the military.
 						</p>
 						<p className='about'>I chose to study software development, and I am incredibly happy with my decision.

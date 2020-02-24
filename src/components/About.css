@@ -44,6 +44,19 @@
 	font-weight: lighter;
 	letter-spacing: 1px;
 }
+.extras {
+	display: flex;
+}
+.extra {
+	color: white;
+	font-weight: lighter;
+	margin: 20px;
+	font-size: 20px;
+	text-decoration: none;
+	border: 1px solid white;
+	padding: 5px;
+	border-radius: 20%;
+}
 .about-main {
 	position: absolute;
 	left: 0;
