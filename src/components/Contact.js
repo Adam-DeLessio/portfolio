@@ -22,7 +22,7 @@ class Contact extends Component {
 						<hr/>
 						<div className='content'>adamdelessio@gmail.com</div>
 					</div>
-					<a href='https://www.linkedin.com/in/adam-delessio/' className='grid-item linkedin'>
+					<a href='https://www.linkedin.com/in/adam-delessio/' className='grid-item linkedin' target='_blank'>
 						<div className='method'>linkedIn</div>
 						<hr/>
 						<div className='content'>adam-delessio</div>

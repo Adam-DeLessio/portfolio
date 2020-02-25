@@ -19,8 +19,8 @@
 	flex-direction: column;
 	align-items: center;
 	background-color: black;
-	width: 30%;
-	height: 100%;
+	width: 30vw;
+	height: 100vh;
 	position: absolute;
 	right: 0;
 }
@@ -84,3 +84,43 @@
 	width: 90%;
 	margin: 5%;
 }
+
+@media screen and (max-width: 400px) {
+	.home-icon {
+		margin: 3px;
+	}
+	.hello {
+		margin-top: 150px;
+		font-size: 20px;
+	}
+	.avatar {
+		width: 70%;
+		height: 15%;
+	}
+	.full-name {
+		font-size: 20px;
+	}
+	.tag {
+		font-size: 14px;
+	}
+	.extras {
+		flex-direction: column;
+	}
+	.extra {
+		font-size: 14px;
+	}
+	.about-aside {
+		right: 0;
+		text-align: center;
+	}
+	.skills-list {
+		flex-direction: column;	
+	}
+}
+
+
+
+
+
+
+
